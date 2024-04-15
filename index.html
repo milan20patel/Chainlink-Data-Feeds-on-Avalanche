@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <label for="currencyPair">Select a currency pair:</label>
+        <select id="currencyPair">
+            <option value="AVAX/USD">AVAX/USD</option>
+            <option value="DOT/USD">DOT/USD</option>
+            <option value="MATIC/USD">MATIC/USD</option>
+            <option value="LINK/USD">LINK/USD</option>
+        </select>
+        <button onclick="getConversionRate()">Submit</button>
+        <p>Conversion Rate: <span id="conversionRate"></span></p>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
